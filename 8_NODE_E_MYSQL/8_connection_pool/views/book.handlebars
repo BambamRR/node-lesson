@@ -1,0 +1,12 @@
+<h1>Livro: </h1>
+<div class="books-container">
+<div>
+    #{{book.id}} - <span class="bold">{{book.title}}</span> - {{book.pageqty}} páginas
+   <a href="/books/edit/{{book.id}}">Editar</a>
+    <form action="/books/remove/{{book.id}}" method="POST">
+    <input type="hidden" name="id" value="{{book.id}}">
+    <input type="submit" name="" id="" value="Remover">
+    </form>
+</div>
+</div>
+</div>
